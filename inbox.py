@@ -53,7 +53,7 @@ class Suggest(commands.Cog, name="Suggestion Command"):
             if channel == None:
                 guild = ctx.guild
                 channel = await guild.create_text_channel(ch)
-                # await channel.set_permissions(ctx.guild.default_role, send_messages=False)
+                # await channel.set_permissions(ctx.guild.default_role, send_messages=False) <-- Temporary if you want to automate the process of making bots-only messages
 
         # note to self : this is garbage ;)
 
